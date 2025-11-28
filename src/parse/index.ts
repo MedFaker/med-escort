@@ -3,7 +3,7 @@ const ParseServer = require('parse-server').ParseServer;
 import path from 'path';
 
 const server = new ParseServer({
-  databaseURI: DATABASE_URL || 'mongodb://localhost:27017/dev', // Connection string for your MongoDB database
+  databaseURI: process.env.DATABASE_URL || 'mongodb://localhost:27017/dev', // Connection string for your MongoDB database
   cloud: path.resolve(__dirname, './main.ts'), // Path to your Cloud Code
   allowClientClassCreation: true,
   appId: 'myAppId',
