@@ -1,5 +1,4 @@
 # Logs
-.idea
 logs
 *.log
 npm-debug.log*
@@ -73,6 +72,5 @@ typings/
 # Serverless directories
 .serverless
 
-.env
-
 dist
+.idea
